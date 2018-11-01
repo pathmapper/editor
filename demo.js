@@ -8,6 +8,6 @@ if (!process.env.GH_AUTH_TOKEN) {
 const bot = require("circle-github-bot").create();
  
 bot.comment(`
-<h5>${bot.env.commitMessage}</h5>
-<strong>${bot.artifactLink('../../artifacts/build/index.html', 'Test build')}</strong>
+<h4>${bot.env.commitMessage}</h4>
+Preview: <strong>${bot.artifactLink('../../artifacts/build/index.html', 'Maputnik test build')}</strong>
 `);
