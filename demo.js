@@ -3,6 +3,6 @@
 const bot = require("circle-github-bot").create();
  
 bot.comment(`
-Commit: ${bot.env.commitMessage} (${bot.env.id})
+<h5>${bot.env.commitMessage}</h5>
 <strong>${bot.artifactLink('../../artifacts/build/index.html', 'Test build')}</strong>
 `);
