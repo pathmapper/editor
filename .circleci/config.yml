@@ -100,5 +100,5 @@ workflows:
     # - build-linux-node-v10
     # - build-osx-node-v6
     # - build-osx-node-v8
-    # - build-osx-node-v10
+    ## - build-osx-node-v10
 
