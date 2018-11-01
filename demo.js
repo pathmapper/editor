@@ -1,5 +1,10 @@
 #!/usr/bin/env node
  
+if (!process.env.GH_AUTH_TOKEN) {
+    console.error("Missing GH_AUTH_TOKEN env var, refusing to run.");
+    process.exit();
+}
+
 const bot = require("circle-github-bot").create();
  
 bot.comment(`
