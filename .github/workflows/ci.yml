@@ -188,7 +188,8 @@ jobs:
 
   # Build Maputnik Desktop and upload artifacts
   Desktop:
-    name: Build
+    needs: [build-node]
+    name: Desktop
     runs-on: ubuntu-latest
     env:
       GOPATH: ${{ github.workspace }}
