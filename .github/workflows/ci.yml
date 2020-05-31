@@ -236,3 +236,4 @@ jobs:
       with:
         name: screenshots-firefox
         path: build/screenshots
+
