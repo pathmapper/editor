@@ -115,7 +115,8 @@ jobs:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
       with:
-        repository: maputnik/desktop
+        repository: pathmapper/desktop
+        ref: gh_actions_editor
         path: ./src/github.com/maputnik/desktop/
 
     - name: Get style
